@@ -9,26 +9,12 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <img src="images.png" alt="">
-
-        </div>
-        <div class="main">
-        <h1>Cadastro do Aluno</h1>
-
-        </div>
-
-            <div class="pesquisa">
-               <img src="procurar.png" alt="">
-            </div>
-            <div class="ferramentas">
-                 <img src="menu-hamburguer.png" alt="">
-            </div>
-
-        </div>
-        
-    </header>
+  
+    <?php
+    
+    include "header.html";
+    
+    ?>
 
     <div class="container">
         <form action="mostraaluno.php" method="post">
@@ -41,7 +27,7 @@
         <label for="turma">TURMA</label>
         <input type="text" name="turma" id="turma" />
         <label for="materia">MATERIA</label>
-        <input type="text" name="mat" id="materia"/>
+        <input type="text" name="materia" id="materia"/>
 
 
    
@@ -51,10 +37,14 @@
        </button>
        </form>
     </div>
+
+    <?php
+    
+    include "footer.html";
+    
+    ?>
   
 
-    <footer>
-
-    </footer>
+   
 </body>
 </html>

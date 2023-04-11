@@ -107,8 +107,24 @@ button{
 footer{
     background-color: rgb(44, 42, 42);
     height: 300px;
+    font-size: 250px;
 }
 
 *{
     margin: 0px;
 }
+
+button{
+    height: 5px !important;
+    text-align: center;
+    
+}
+
+
+.caixa_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

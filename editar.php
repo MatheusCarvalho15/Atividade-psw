@@ -1,5 +1,15 @@
 
+<?php
 
+session_start();
+
+$nome = $_SESSION['nome'];
+$cpf = $_SESSION['cpf']; 
+$email = $_SESSION['email']; 
+$turma = $_SESSION['turma']; 
+$materia = $_SESSION['materia']; 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,15 +26,15 @@
     <div class="container">
         <form action="mostraaluno.php" method="post">
         <label for="nome">NOME</label>
-        <input type="text" name="nome" id="nome" value=<?php echo $_GET['nome']?> />
+        <input type="text" name="nome" id="nome" value=<?php echo $_SESSION['nome']?> />
         <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf"/>
+        <input type="text" name="cpf" id="cpf" value=<?php echo $_SESSION['cpf']?>/>
         <label for="email">EMAIL</label>
-        <input type="text" name="email" id="email" />
+        <input type="text" name="email" id="email" value=<?php echo $_SESSION['email']?> />
         <label for="turma">TURMA</label>
-        <input type="text" name="turma" id="turma" />
+        <input type="text" name="turma" id="turma" value=<?php echo $_SESSION['turma']?> />
         <label for="materia">MATERIA</label>
-        <input type="text" name="mat" id="materia"/>
+        <input type="text" name="materia" id="materia" value=<?php echo $_SESSION['materia']?>/>
 
         
    
